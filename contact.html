@@ -32,7 +32,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <br>
-            <input type="text" id="search-box" placeholder="Search">
+            <input type="text" id="search-box" placeholder="Search" onkeydown="if(event.key === 'Enter') searchGoogle()">
         </nav>
         
         <br>
@@ -46,7 +46,7 @@
                 <h3 id="contact-info"> Do you have any questions, concerns, or even need a travel recommendation for an unforgettable Myrtle Beach vacation? Look no further!</h3>
                 <h3 id="contact-info"> Please fill out the required information in the form below and we will respond to your request as soon as possible. Thank you!</h3>
                 <div class="card">
-                    <form action="submit_form.php" method="post">
+                    <form action="connect.php" method="post">
                         <label for="first_name">First Name:</label>
                         <input type="text" id="first_name" name="first_name" required><br><br>
                         
@@ -77,9 +77,9 @@
                     <a href="index.html">
                         <img src="Root_Folder/Images/Myrtle_Marvels_Logo_2.png" alt="Myrtle Marvels Logo">
                     </a>
-                    <img src="Root_Folder/Images/Footer_Facebook.jpg" alt="Facebook Icon" width="100" height="100">
-                    <img src="Root_Folder/Images/Footer_Instagram.jpg" alt="Instagram Icon" width="100" height="100">
-                    <img src="Root_Folder/Images/Footer_Twitter.png" alt="Twitter Icon" width="150" height="100">
+                    <img id="share-facebook" src="Root_Folder/Images/Footer_Facebook.jpg" alt="Facebook Icon" width="100" height="100" style="cursor: pointer;">
+                    <img id="share-instagram" src="Root_Folder/Images/Footer_Instagram.jpg" alt="Instagram Icon" width="100" height="100" style="cursor: pointer;">
+                    <img id="share-twitter" src="Root_Folder/Images/Footer_Twitter.png" alt="Twitter Icon" width="150" height="100" style="cursor: pointer;">
                 </div>
     
                 <div id="footer-text">
@@ -95,5 +95,8 @@
     
                 <h3 id="index-heading">Copyright 2025 Myrtle Marvels. All Rights Reserved.</h3>
             </footer>
+    
+            <script src="Myrtle Marvels JavaScript/script.js"></script>
+    
         </body>
     </html>
